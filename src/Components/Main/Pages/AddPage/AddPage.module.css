@@ -1,0 +1,43 @@
+.Container{
+    width:100%;
+    height: 90vh;
+    margin: auto;
+    background-color: var(--Surface);
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+.Menu{
+    border-right: 0.1vw solid var(--devider);
+}
+.Menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.Menu ul li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2vh 2vw 2vh 2vw;
+    border-top:0.1vh solid var(--devider);
+    font-size: 2.4vh;
+    font-weight: bolder;
+}
+.Menu ul:last-child{
+    border-bottom: 0.1vh solid var(--devider);
+}
+.Active{
+    color: var(--primary-color);
+    border-right: 0.5vw solid var(--primary-color);
+}
+.Title{
+    width: 100%;
+    height: 7vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.4vh;
+    font-weight: bolder;
+    border-bottom: 0.1vh solid var(--devider);
+}
+

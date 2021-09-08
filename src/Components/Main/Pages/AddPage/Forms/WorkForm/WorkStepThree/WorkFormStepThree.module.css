@@ -1,0 +1,69 @@
+.InputContainer{
+    width: 80%;
+    margin: auto;
+    margin-top: 5vh;
+    display: grid;
+    grid-row-gap: 4vh;
+}
+.Knowledge{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2vh;
+}
+.Knowledge label{
+    width: 90%;
+}
+.KnowledgeSelect{
+    padding: 1.2vh 1vw 1.2vh 1vw;
+    color: black;
+    opacity: 0.8;
+    transition: 0.5s ease-in-out;
+}
+.KnowledgeSelect:focus{
+    opacity: 1;
+    outline: none;
+}
+.KnowledgeSelect:focus + .AddBtn{
+    opacity: 1;
+}
+.SelectContainer{
+    display: grid;
+    grid-template-columns: 6fr 1fr;
+}
+.AddBtn{
+    background-color: var(--primaryVariant-color);
+    border:0.1vh solid var(--primaryVariant-color);
+    opacity: 0.8;
+    transition: 0.5s ease-in-out;
+}
+.ResultContainer{
+    min-height: 5vh;
+    max-height: 25vh;
+    border:0.1vh solid var(--product-color);
+}
+.BtnLine{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    column-gap: 2vw;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 5vh;
+}
+.PreviousBtn{
+    width: 10vw;
+    padding: 1vh;
+    background-color: var(--product-color);
+    border:0.1vh solid var(--helperTextColor);
+
+}
+.NextBtn{
+    width: 10vw;
+    padding: 1vh;
+    margin-right: 5vw;
+    background-color: var(--primaryVariant-color);
+    border:0.1vh solid var(--primary-color);
+    color: white;
+}

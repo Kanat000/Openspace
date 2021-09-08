@@ -1,0 +1,44 @@
+.Container{
+    width: 100%;
+}
+.ResultSection{
+    width: 100%;
+}
+.Menu{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-bottom: 0.1vh solid var(--Surface);
+}
+.active{
+    color: var(--logoColor);
+    border-bottom: 0.5vh solid var(--logoColor);
+}
+.Menu div{
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2vw;
+    font-family: monospace;
+    font-weight: 550;
+    cursor: pointer;
+}
+.Results{
+    padding: 3vh 0 3vh 0;
+}
+.OrderContainer{
+    display: grid;
+    grid-row-gap: 2vh;
+}
+.ProductContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 10vh;
+}
+.ProjectContainer{
+    display: grid;
+    grid-row-gap: 2vh;
+}
