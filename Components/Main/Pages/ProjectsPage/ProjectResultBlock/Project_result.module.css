@@ -1,0 +1,128 @@
+.Container{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-column-gap: 6vh;
+    border-top: 0.1vh solid var(--devider);
+    border-bottom: 0.1vh solid var(--devider);
+    padding: 2vh 3vh 2vh 3vh;
+    background-color: var(--Surface);
+}
+.ImgPart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Frame{
+    position: relative;
+    width: 100%;
+    padding-top: 100%;
+    background-color: var(--product-color);
+}
+.Img{
+    width:100%;
+    height:100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    object-fit: cover;
+}
+
+.Topic{
+    font-size: 1.2vw;
+    font-weight: bolder;
+    font-family: "Hind", serif;
+}
+.Price{
+    font-size: 1.1vw;
+    font-weight: bolder;
+    letter-spacing: normal;
+}
+.Description{
+    margin: 2vh 0 2vh 0;
+    font-size: 1vw;
+    font-family: 'Mukta', serif;
+}
+.BtnBlock{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+.BtnBlock div:last-child{
+}
+.Subject{
+    width: 100%;
+    text-align: center;
+    padding: 0.5vh;
+    background-color: var(--product-color);
+}
+.BtnArea{
+    display: flex;
+    justify-content: flex-end;
+}
+.readMoreBtn {
+    width: auto;
+    border: 0;
+    background-color: transparent;
+    font-size: 1vw;
+    font-weight: 550;
+    letter-spacing: 0.1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s ease-in-out;
+    padding: 0.5vh 2vh 0.5vh 2vh;
+}
+.readMoreBtn:hover{
+    background-color: var(--primaryVariant-color);
+    color: var(--secondary-color);
+}
+.readMoreBtn:hover > .readMoreIcon{
+    fill:var(--secondary-color);
+}
+.readMoreIcon{
+    width: 1.2vw;
+    height: 1.2vw;
+    fill: var(--textColor);
+    margin-left: 1vh;
+    transition: 0.4s ease-in-out;
+}
+
+.saverBtn{
+    position: absolute;
+    right: 2vh;
+    top:1.5vh;
+    background-color: rgba(215, 215, 215, 0.65);
+    backdrop-filter: blur(100%);
+    padding: 1.5vh;
+    border-radius: 50%;
+    border:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.4s ease-in-out;
+}
+.Container:hover > .saverBtn{
+    opacity: 1;
+}
+.saverIcon{
+    width: 1.5vw;
+    height: 1.5vw;
+    fill: rgb(66, 66, 66);
+}
+
+.saverIconActive{
+    width: 1.5vw;
+    height: 1.5vw;
+    fill: rgb(255, 37, 37);
+}
+.Subject span:first-child{
+   font-size: 0.8vw;
+}
+.Subject span:last-child{
+   font-size: 1vw;
+    font-weight: bolder;
+}

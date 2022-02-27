@@ -1,0 +1,100 @@
+.Form{
+    width: 90%;
+    height: 60vh;
+    margin: auto;
+    margin-top: 4vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+.ImgBlock{
+    width: 30vh;
+    height: 30vh;
+    margin:auto;
+    position:relative;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.ImgInput{
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    opacity: 0;
+}
+.AddBlock{
+    width: 30vh;
+    height: 30vh;
+    position: absolute;
+    top:0;
+    left: 0;
+    background-color: var(--Surface);
+    border:0.5vh dashed var(--helperTextColor);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.AddIcon{
+    width: 10vh;
+    height: 10vh;
+    fill:var(--helperTextColor);
+}
+.AddText{
+    width: 30vh;
+    margin: auto;
+    text-align: center;
+    color: var(--helperTextColor);
+    font-size: 2.4vh;
+    font-weight: bolder;
+    margin-top: 2vh;
+}
+.NextBtnLine{
+    width: 100%;
+    height: 10vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.NextBtn{
+    width: 10vw;
+    padding: 1vh;
+    background-color: var(--primaryVariant-color);
+    border:0;
+    color: white;
+}
+
+.FirstLine{
+    padding: 2vh 2vw 2vh 2vw;
+    display: grid;
+    grid-row-gap: 4vh;
+    grid-column-gap: 2vw;
+}
+
+.FirstLine div{
+    display: flex;
+    flex-direction: column;
+}
+label{
+    width: 100%;
+    height: 5vh;
+    font-size: 2.4vh;
+    font-weight: bolder;
+    color: var(--helperTextColor);
+}
+.Input{
+    padding: 1.2vh 1vw 1.2vh 1vw;
+    color: black;
+    border:0.3vh solid var(--helperTextColor);
+    border-radius: 5vh;
+    transition: 0.5s ease-in-out;
+    opacity: 0.9;
+}
+.Input:focus{
+    outline: none;
+    opacity: 1;
+    box-shadow: 0.1vw 0.1vw 0 var(--primaryVariant-color),
+    0.1vw -0.1vw 0 var(--primaryVariant-color),
+    -0.1vw 0.1vw 0 var(--primaryVariant-color),
+    -0.1vw -0.1vw 0 var(--primaryVariant-color);
+}

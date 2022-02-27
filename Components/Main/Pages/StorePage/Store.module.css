@@ -1,0 +1,14 @@
+.Container{
+    width: 100%;
+    padding: 2vh 0 2vh 0;
+}
+.ProductSection{
+    width: 100%;
+    background-color: var(--SurfaceMain);
+
+}
+.ProductGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 7vh;
+}

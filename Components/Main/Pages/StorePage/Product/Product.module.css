@@ -1,0 +1,145 @@
+a{
+    outline:none;
+}
+.Container{
+    width: 90%;
+    height: 55vh;
+    margin:auto;
+    box-sizing: border-box;
+}
+.Frame{
+    position: relative;
+    width: 100%;
+    background-color: var(--textColor);
+    margin: auto;
+    padding-top: 100%;
+    overflow: hidden;
+}
+.Img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.saveBtn{
+    position: absolute;
+    bottom: 1.5vh;
+    right: 1.5vh;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(50%);
+    padding: 2vh;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+.saverIcon{
+    width: 1.5vw;
+    height: 1.5vw;
+    fill: #a5a5a5;
+}
+
+.saverIconActive{
+    width: 1.5vw;
+    height: 1.5vw;
+    fill: rgb(255, 37, 37);
+}
+.Frame:hover > .saveBtn{
+    opacity: 1;
+}
+
+
+
+
+
+.info{
+    width: 100%;
+    background-color: var(--productBodyColor);
+    backdrop-filter: blur(70%);
+    text-align: center;
+}
+.MainInfo{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    align-items: center;
+}
+
+.name{
+    font-size: 1vw;
+    font-weight: 600;
+    overflow-x: hidden;
+    max-height: 3vh;
+    white-space: nowrap;
+}
+.price{
+    display: flex;
+    padding: 0.5vh;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--priceBlock);
+    backdrop-filter: blur(100%);
+    color: var(--textColor);
+}
+.price span:first-child{
+    font-size: 0.9vw;
+    font-weight: 550;
+}
+.price span:last-child{
+    font-size: 0.8vw;
+    font-weight: 550;
+}
+.location{
+    font-size: 1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.location div span:first-child{
+    color:var(--helperTextColor);
+    font-size: 0.8vw;
+}
+.location div span:last-child{
+    font-size: 0.9vw;
+}
+.btnContainer{
+    margin-top: 1vh;
+    width: 100%;
+    text-align: center;
+}
+.readMoreBtn{
+    width: 70%;
+    padding: 1vh;
+    margin: auto;
+    border: 0;
+    background-color: transparent;
+    color: var(--textColor);
+    font-size: 1vw;
+    font-weight: bolder;
+    opacity: 0.8;
+    transition: 0.4s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.readMoreBtn:hover{
+    background-color: var(--primaryVariant-color);
+    color:var(--secondary-color);
+    opacity: 1;
+    width: 100%;
+}
+.readMoreBtn:hover > .goIcon{
+    fill:var(--secondary-color);
+}
+.goIcon{
+    width: 1.3vw;
+    height: 1.3vw;
+    fill:var(--textColor);
+    transition: 0.4s ease-in-out;
+    margin-left: 1vh;
+}

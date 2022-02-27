@@ -1,0 +1,161 @@
+.Container{
+    width: 100%;
+    height: 90vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin: auto;
+}
+.Product{
+    width: 90%;
+    padding: 3vh;
+    margin: auto;
+    margin-top: 3vh;
+    display: grid;
+    align-items: flex-start;
+    grid-template-columns: 1fr 2fr;
+    background-color: var(--Surface);
+}
+
+.ImgBlock{
+    display: grid;
+    grid-row-gap: 1vh;
+}
+.Frame{
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+    background-color: var(--product-color);
+}
+.Img{
+    width: 100%;
+    height:100%;
+    position: absolute;
+    top:0;
+    left:0;
+    object-fit: cover;
+}
+.ImgStore{
+    padding: 0 2vw 0 2vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+.SmallFrame{
+    width: 3vw;
+    height: 3vw;
+    position: relative;
+    background-color: var(--product-color);
+}
+.SmallImg{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.InfoBlock{
+    width: 100%;
+    height: 100%;
+    padding: 0 3vh 0 3vh;
+}
+.Name{
+    font-size: 3vh;
+    font-weight: 600;
+}
+.Price{
+    font-size: 2.7vh;
+    font-weight: 600;
+    margin-top: 1vh;
+}
+
+.location span:first-child{
+    font-size: 2.2vh;
+    color: var(--helperTextColor);
+    font-weight: bolder;
+}
+.location span:last-child{
+    font-size: 2.5vh;
+    font-weight: bolder;
+}
+.Description{
+    width: 45vw;
+    max-height: 30vh;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.Description::-webkit-scrollbar{
+    width: 0.5vw;
+}
+.Description::-webkit-scrollbar-thumb{
+    background-color: var(--helperTextColor);
+}
+.Description::-webkit-scrollbar-track{
+    background-color: var(--product-color);
+}
+.BtnBlock{
+    width: 35vw;
+    height: 15vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+.ChatBtnBlock, .LikeBtnBlock{
+    display: grid;
+    align-items: center;
+}
+.ChatBtn{
+    width: 90%;
+    margin: auto;
+    background-color: var(--primaryVariant-color);
+    color: rgba(255, 255, 255, 0.78);
+    border: 0;
+    padding: 1vh;
+    font-size: 2.3vh;
+    font-weight: bolder;
+}
+.ChatBtn:hover{
+    backdrop-filter: contrast(1);
+}
+.Publisher{
+    margin-top: 3vh;
+}
+.Publisher span:first-child{
+    font-size: 2.4vh;
+    color: var(--helperTextColor);
+    font-weight: bolder;
+}
+.Publisher span:last-child{
+    font-size: 2.5vh;
+    color: var(--primary-color);
+    font-weight: bolder;
+}
+.otherProducts {
+    width: 100%;
+    margin: auto;
+    padding: 3vh 0 3vh 0;
+    border-top: 0.1vh solid var(--devider);
+    margin-top: 3vh;
+}
+.Recomendation{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2vh;
+}
+.LikeBtn{
+    width: 90%;
+    margin: auto;
+    background-color: mediumseagreen;
+    padding: 1vh;
+    border: 0.1em solid darkseagreen;
+}
+.LikeBtnActive{
+    width: 90%;
+    margin: auto;
+    background-color: red;
+    padding: 1vh;
+    border: 0.1em solid indianred;
+}

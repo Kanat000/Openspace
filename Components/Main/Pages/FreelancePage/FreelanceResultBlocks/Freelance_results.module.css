@@ -1,0 +1,171 @@
+.Container{
+    width: 95%;
+    margin: auto;
+    border:0.1vh solid var(--primary-color);
+    background-color: var(--Surface);
+    border-radius: 1vh;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    position: relative;
+}
+.Head{
+    width: 90%;
+    display: grid;
+    margin: auto;
+    grid-template-columns: 2fr 4fr;
+}
+.topic{
+    letter-spacing: 0.1vw;
+    font-size: 1.2vw;
+    font-weight: 600;
+    width: 89%;
+    margin:auto;
+    padding: 2vh 0 1vh 0;
+    font-family: Arial, serif;
+}
+.knowledge{
+    display: flex;
+    align-items: center;
+    grid-column-gap: 3vh;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+.knowledge::-webkit-scrollbar{
+    height: 0.5vh;
+    background-color: var(--helperTextColor);
+}
+.knowledge::-webkit-scrollbar-thumb{
+    width: 0.5vh;
+    background-color: var(--product-color)
+}
+.knowledge div{
+    width: auto;
+    border-radius: 10vh;
+    background-color: var(--priceBlock);
+    padding: 0.5vh 1vh 0.5vh 1vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.1vw;
+    font-size: 0.7vw;
+
+}
+.description{
+    font-size: 1vw;
+    width: 100%;
+    font-family: 'Mukta', sans-serif;
+    display: flex;
+    justify-content: flex-end;
+}
+.description span{
+    letter-spacing: 0.1vw;
+    width: 96%;
+}
+.ButtonPlace {
+    width: 100%;
+    margin:auto;
+    display: grid;
+    padding: 2vh 4vh 2vh 2vh;
+    grid-column-gap: 1vh;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.MoreInfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--product-color);
+
+    font-size: 1vw;
+}
+.MoreInfo span:first-child{
+    font-size: 0.9vw;
+    letter-spacing: 0.1vw;
+    color: var(--helperTextColor);
+}
+.MoreInfo span:last-child{
+    font-size: 0.9vw;
+    font-weight: bolder;
+}
+
+.saverBtn{
+    position: absolute;
+    right: 2vh;
+    top:1.5vh;
+    background-color: rgba(215, 215, 215, 0.65);
+    backdrop-filter: blur(100%);
+    padding: 1.5vh;
+    border-radius: 50%;
+    border:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.4s ease-in-out;
+}
+.Container:hover > .saverBtn{
+    opacity: 1;
+}
+.saverIcon{
+    width: 1.5vw;
+    height: 1.5vw;
+    fill: rgb(66, 66, 66);
+}
+
+.saverIconActive{
+    width: 1.5vw;
+    height: 1.5vw;
+    fill: rgb(255, 37, 37);
+}
+.readMoreBtn {
+    width: 65%;
+    border: 0;
+    background-color: transparent;
+    font-size: 1vw;
+    font-weight: 550;
+    letter-spacing: 0.1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s ease-in-out;
+    padding: 0.5vh;
+}
+.readMoreBtn:hover{
+    background-color: var(--primaryVariant-color);
+    color: var(--secondary-color);
+}
+.readMoreBtn:hover > .readMoreIcon{
+    fill:var(--secondary-color);
+}
+.readMoreIcon{
+    width: 1.2vw;
+    height: 1.2vw;
+    fill: var(--textColor);
+    margin-left: 1vh;
+    transition: 0.4s ease-in-out;
+}
+
+.orderInfo{
+    width: 100%;
+}
+.price span:first-child{
+    font-size: 1vw;
+    font-weight: 550;
+}
+.price span:last-child{
+    font-size: 0.8vw;
+    font-weight: 550;
+}
+.price{
+    margin-top: 3vh;
+}
+.deadline{
+    margin-top: 2vh;
+}
+.deadline span:first-child{
+    color: var(--additional-color5);
+    font-size: 0.9vw;
+}
+.deadline span:last-child{
+    font-size: 1vw;
+    font-weight: 550;
+}

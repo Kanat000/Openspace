@@ -1,0 +1,12 @@
+.Container{
+    width: 100%;
+    padding: 2vh 0 2vh 0;
+}
+.resultBlock{
+    width: 95%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2vh;
+}
+

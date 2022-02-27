@@ -1,0 +1,46 @@
+
+.Search{
+    display: grid;
+    align-items: center;
+}
+.InputBox{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.SearchInput{
+    width: 70%;
+    padding: 1.5vh;
+    padding-left: 3vh;
+    border:0.1vh solid var(--primary-color);
+    opacity: 0.7;
+    border-radius: 10vh;
+    font-size: 1.2vw;
+    font-family: 'Josefin Sans', sans-serif;
+    transition: 0.2s ease-in-out;
+    color: black;
+}
+.SearchInput:focus{
+    width: 80%;
+    outline: none;
+    opacity: 1;
+}
+.SearchInput:focus + .Btn{
+    right: 9vh;
+    opacity: 1;
+}
+.Btn{
+    background-color: transparent;
+    border:0;
+    position: absolute;
+    top:1.2vh;
+    right: 13vh;
+    transition: 0.2s ease-in-out;
+    opacity: 0.9;
+}
+.SearchIcon{
+    fill: black;
+     width: 1.3vw;
+    height: 1.3vw;
+}
