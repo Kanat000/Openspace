@@ -1,5 +1,4 @@
 # Openspace
-Freelance website
 ![Снимок экрана (15)](https://user-images.githubusercontent.com/81953174/164413912-10315f69-4d97-4e5c-8268-d03c9fe7a0f4.png)
 ![Снимок экрана (14)](https://user-images.githubusercontent.com/81953174/164413941-66b97e95-b4f6-4e88-9e28-27d20e0f1039.png)
 ![Снимок экрана (12)](https://user-images.githubusercontent.com/81953174/164414008-85b1d8cb-4f5a-46d4-8987-2430038c4fc9.png)
